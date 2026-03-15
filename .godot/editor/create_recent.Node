@@ -1,0 +1,7 @@
+Sprite2D
+ParallaxBackground
+Label
+Node
+CollisionShape2D
+AnimatedSprite2D
+Area2D

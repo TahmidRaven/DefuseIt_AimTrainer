@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://dai1l6tbkfx51"]
+
+[ext_resource type="Script" uid="uid://bnt2wjv5ptsf8" path="res://Scenes/game.gd" id="1_ebmjs"]
+[ext_resource type="FontFile" uid="uid://dsdhb05tg74g7" path="res://Fonts/Silver.ttf" id="2_qxrlw"]
+[ext_resource type="Texture2D" uid="uid://gly8p4p78wig" path="res://BG/RandomBg.png" id="2_wrm1d"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_ebmjs")
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(563.20953, 530.574)
+scale = Vector2(0.6877183, 0.6318479)
+texture = ExtResource("2_wrm1d")
+
+[node name="InstructionLabel" type="Label" parent="."]
+offset_left = 352.20953
+offset_top = 2.5739746
+offset_right = 799.20953
+offset_bottom = 47.573975
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_qxrlw")
+theme_override_font_sizes/font_size = 40
+text = "DEFUSE THE BOMB! BEFORE TIME RUNS OUT"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 171
+
+[node name="Scores" type="Node" parent="."]
+
+[node name="SAVES" type="Label" parent="Scores"]
+offset_left = 80.20953
+offset_top = 22.573975
+offset_right = 174.20953
+offset_bottom = 62.573975
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_qxrlw")
+theme_override_font_sizes/font_size = 35
+text = "DEFUSES: "
+
+[node name="BOOMS" type="Label" parent="Scores"]
+offset_left = 85.20953
+offset_top = 47.573975
+offset_right = 148.20953
+offset_bottom = 87.573975
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_qxrlw")
+theme_override_font_sizes/font_size = 35
+text = "BOOMS:"
